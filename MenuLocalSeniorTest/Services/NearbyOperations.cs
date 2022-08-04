@@ -38,5 +38,21 @@ namespace MenuLocalSeniorTest.Services
                 lastLocation = item.geometry.location;
             }
         }
+        public void FilterReachableBarList(DateTime EndTime)
+        {
+            List<NearbyResult> copyOfListOfBars = new List<NearbyResult>();
+            foreach (var item in ListOfBars)
+            {
+                if (item.ArrivedTime<=EndTime)
+                {
+                    copyOfListOfBars.Add(item);
+                }
+                else
+                {
+                    /*do notnihg*/
+                }
+            }
+            ListOfBars = copyOfListOfBars;
+        }
     }
 }

@@ -43,6 +43,7 @@ namespace MenuLocalSeniorTest
                 nearbyOperations = new NearbyOperations(barList);
                 nearbyOperations.OrderList(location);
                 nearbyOperations.GetTimeToArrive(location, (DateTime)StartTimeTx.EditValue);
+                nearbyOperations.FilterReachableBarList((DateTime)EndTimeTx.EditValue);
                 barListGrid.DataSource = nearbyOperations.ListOfBars;
             }
             else
