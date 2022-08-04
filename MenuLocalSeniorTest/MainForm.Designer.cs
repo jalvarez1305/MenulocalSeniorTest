@@ -40,6 +40,7 @@ namespace MenuLocalSeniorTest
             this.EndTimeTx = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemDateEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.FindBt = new DevExpress.XtraBars.BarButtonItem();
+            this.barListItem1 = new DevExpress.XtraBars.BarListItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -50,9 +51,10 @@ namespace MenuLocalSeniorTest
             this.barListGrid = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.nameCol = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.barListItem1 = new DevExpress.XtraBars.BarListItem();
             this.arriveTime = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.roadsCol = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.RoadEdit = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
@@ -65,6 +67,7 @@ namespace MenuLocalSeniorTest
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barListGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RoadEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -180,6 +183,12 @@ namespace MenuLocalSeniorTest
             this.FindBt.Name = "FindBt";
             this.FindBt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.FindBt_ItemClick);
             // 
+            // barListItem1
+            // 
+            this.barListItem1.Caption = "Transporte";
+            this.barListItem1.Id = 6;
+            this.barListItem1.Name = "barListItem1";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -248,6 +257,8 @@ namespace MenuLocalSeniorTest
             this.barListGrid.MainView = this.gridView1;
             this.barListGrid.MenuManager = this.ribbon;
             this.barListGrid.Name = "barListGrid";
+            this.barListGrid.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.RoadEdit});
             this.barListGrid.Size = new System.Drawing.Size(387, 305);
             this.barListGrid.TabIndex = 0;
             this.barListGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -257,9 +268,12 @@ namespace MenuLocalSeniorTest
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.nameCol,
-            this.arriveTime});
+            this.arriveTime,
+            this.roadsCol});
             this.gridView1.GridControl = this.barListGrid;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsCustomization.AllowRowSizing = true;
+            this.gridView1.OptionsView.RowAutoHeight = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // nameCol
@@ -270,21 +284,6 @@ namespace MenuLocalSeniorTest
             this.nameCol.Visible = true;
             this.nameCol.VisibleIndex = 0;
             // 
-            // groupControl2
-            // 
-            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl2.Location = new System.Drawing.Point(400, 3);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(392, 330);
-            this.groupControl2.TabIndex = 1;
-            this.groupControl2.Text = "Mapa";
-            // 
-            // barListItem1
-            // 
-            this.barListItem1.Caption = "Transporte";
-            this.barListItem1.Id = 6;
-            this.barListItem1.Name = "barListItem1";
-            // 
             // arriveTime
             // 
             this.arriveTime.Caption = "Hora de Arrivo";
@@ -294,6 +293,29 @@ namespace MenuLocalSeniorTest
             this.arriveTime.Name = "arriveTime";
             this.arriveTime.Visible = true;
             this.arriveTime.VisibleIndex = 1;
+            // 
+            // roadsCol
+            // 
+            this.roadsCol.Caption = "Ruta";
+            this.roadsCol.ColumnEdit = this.RoadEdit;
+            this.roadsCol.FieldName = "Roads";
+            this.roadsCol.Name = "roadsCol";
+            this.roadsCol.Visible = true;
+            this.roadsCol.VisibleIndex = 2;
+            // 
+            // RoadEdit
+            // 
+            this.RoadEdit.AllowHtmlDraw = DevExpress.Utils.DefaultBoolean.True;
+            this.RoadEdit.Name = "RoadEdit";
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl2.Location = new System.Drawing.Point(400, 3);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(392, 330);
+            this.groupControl2.TabIndex = 1;
+            this.groupControl2.Text = "Mapa";
             // 
             // MainForm
             // 
@@ -320,6 +342,7 @@ namespace MenuLocalSeniorTest
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.barListGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RoadEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -351,5 +374,7 @@ namespace MenuLocalSeniorTest
         private DevExpress.XtraGrid.Columns.GridColumn nameCol;
         private DevExpress.XtraBars.BarListItem barListItem1;
         private DevExpress.XtraGrid.Columns.GridColumn arriveTime;
+        private DevExpress.XtraGrid.Columns.GridColumn roadsCol;
+        private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit RoadEdit;
     }
 }

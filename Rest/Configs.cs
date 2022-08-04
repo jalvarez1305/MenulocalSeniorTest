@@ -15,5 +15,7 @@ namespace Rest
         public static string NearbyURL = $"https://maps.googleapis.com/maps/api/place/nearbysearch/json?key={KEY}&location=[LATITUD]%2C[LONGITUD]&opennow={OPEN_NOW}&radius={RADIUS}&type={TYPE}";
 
         public static string DistanceURL = $"https://maps.googleapis.com/maps/api/distancematrix/json?key={KEY}&destinations=[LATITUD_DESTINO]%2C[LONGITUD_DESTINO]&origins=[LATITUD_ORIGEN]%2C[LONGITUD_ORIGEN]&departure_time=[START_TIME]";
+
+        public static string RoutesURL = $"https://maps.googleapis.com/maps/api/directions/json?key={KEY}&destination=[LATITUD_DESTINO]%2C[LONGITUD_DESTINO]&origin=[LATITUD_ORIGEN]%2C[LONGITUD_ORIGEN]&departure_time=[START_TIME]&language=es";
     }
 }
