@@ -26,5 +26,9 @@ namespace Rest.Models
         public string vicinity { get; set; }
         public OpeningHours opening_hours { get; set; }
         public bool? permanently_closed { get; set; }
+        public double Distance { get; set; }
+        public int MinutesToArrive { get; set; }
+        public DateTime ArrivedTime { get; set; }
+        public string Roads { get; set; }
     }
 }

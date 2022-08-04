@@ -14,29 +14,28 @@ namespace Rest.Services
         public List<NearbyResult> GetBars(Location location)
         {
             /*Set URL*/
-            string searchURL = Config.URL.Replace("[LATITUD]", location.lat.ToString());
+            string searchURL = Configs.NearbyURL.Replace("[LATITUD]", location.lat.ToString());
             searchURL = searchURL.Replace("[LONGITUD]", location.lng.ToString());
-
-            Config config = new Config();
+            List<NearbyResult> barList = new List<NearbyResult>();
             try
             {
                 using (WebClient webClient = new WebClient())
                 {
-                    webClient.BaseAddress = Configs.ConfigSelectEndPoint;
-                    var url = Configs.ConfigSelectEndPoint;
+                    webClient.BaseAddress = searchURL;
+                    var url = searchURL;
                     webClient.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
                     webClient.Headers[HttpRequestHeader.ContentType] = "application/json";
-                    string data = JsonConvert.SerializeObject(filters);
+                    string data = "";
                     var response = webClient.UploadString(url, data);
-                    var dataResponse = JsonConvert.DeserializeObject<RootConfig>(response);
-                    config = dataResponse.data.FirstOrDefault();
+                    var dataResponse = JsonConvert.DeserializeObject<NearbyRoot>(response);
+                    barList = dataResponse.results;
                 }
             }
             catch (Exception)
             {
                 /*do nothing*/
             }
-            return config;
+            return barList;
         }
     }
 }

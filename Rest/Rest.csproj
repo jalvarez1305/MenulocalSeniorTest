@@ -79,8 +79,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Configs.cs" />
+    <Compile Include="Models\Bounds.cs" />
+    <Compile Include="Models\DirectionsRoute.cs" />
+    <Compile Include="Models\Distance.cs" />
+    <Compile Include="Models\DistanceRoot.cs" />
+    <Compile Include="Models\Duration.cs" />
+    <Compile Include="Models\DurationInTraffic.cs" />
+    <Compile Include="Models\Element.cs" />
+    <Compile Include="Models\EndLocation.cs" />
+    <Compile Include="Models\GeocodedWaypoint.cs" />
+    <Compile Include="Models\Geometry.cs" />
+    <Compile Include="Models\Leg.cs" />
+    <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\NearbyResult.cs" />
+    <Compile Include="Models\NearbyResultComparer.cs" />
+    <Compile Include="Models\NearbyRoot.cs" />
+    <Compile Include="Models\Northeast.cs" />
+    <Compile Include="Models\OpeningHours.cs" />
+    <Compile Include="Models\OverviewPolyline.cs" />
+    <Compile Include="Models\Photo.cs" />
+    <Compile Include="Models\PlusCode.cs" />
+    <Compile Include="Models\Polyline.cs" />
+    <Compile Include="Models\Route.cs" />
+    <Compile Include="Models\Row.cs" />
+    <Compile Include="Models\Southwest.cs" />
+    <Compile Include="Models\StartLocation.cs" />
+    <Compile Include="Models\Step.cs" />
+    <Compile Include="Models\Viewport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DistanceService.cs" />
+    <Compile Include="Services\NearbySearch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
