@@ -54,7 +54,6 @@ namespace MenuLocalSeniorTest
             this.arriveTime = new DevExpress.XtraGrid.Columns.GridColumn();
             this.roadsCol = new DevExpress.XtraGrid.Columns.GridColumn();
             this.RoadEdit = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
@@ -68,7 +67,6 @@ namespace MenuLocalSeniorTest
             ((System.ComponentModel.ISupportInitialize)(this.barListGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RoadEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -227,11 +225,9 @@ namespace MenuLocalSeniorTest
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Controls.Add(this.groupControl1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.groupControl2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 158);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -246,7 +242,7 @@ namespace MenuLocalSeniorTest
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(3, 3);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(391, 330);
+            this.groupControl1.Size = new System.Drawing.Size(789, 330);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Bares";
             // 
@@ -259,7 +255,7 @@ namespace MenuLocalSeniorTest
             this.barListGrid.Name = "barListGrid";
             this.barListGrid.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.RoadEdit});
-            this.barListGrid.Size = new System.Drawing.Size(387, 305);
+            this.barListGrid.Size = new System.Drawing.Size(785, 305);
             this.barListGrid.TabIndex = 0;
             this.barListGrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -308,15 +304,6 @@ namespace MenuLocalSeniorTest
             this.RoadEdit.AllowHtmlDraw = DevExpress.Utils.DefaultBoolean.True;
             this.RoadEdit.Name = "RoadEdit";
             // 
-            // groupControl2
-            // 
-            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl2.Location = new System.Drawing.Point(400, 3);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(392, 330);
-            this.groupControl2.TabIndex = 1;
-            this.groupControl2.Text = "Mapa";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,7 +330,6 @@ namespace MenuLocalSeniorTest
             ((System.ComponentModel.ISupportInitialize)(this.barListGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RoadEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,7 +354,6 @@ namespace MenuLocalSeniorTest
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraGrid.GridControl barListGrid;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn nameCol;

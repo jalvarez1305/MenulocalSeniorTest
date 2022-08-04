@@ -126,3 +126,11 @@ C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\MenuLocalSeniorTes
 C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\MenuLocalSeniorTest.application
 C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\obj\Debug\MenuLocalSeniorTest.exe.manifest
 C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\obj\Debug\MenuLocalSeniorTest.application
+C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\DevExpress.Map.v21.2.Core.dll
+C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\DevExpress.XtraMap.v21.2.dll
+C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\DevExpress.Map.v21.2.Core.xml
+C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\DevExpress.XtraMap.v21.2.xml
+C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\de\DevExpress.Map.v21.2.Core.resources.dll
+C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\es\DevExpress.Map.v21.2.Core.resources.dll
+C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\ja\DevExpress.Map.v21.2.Core.resources.dll
+C:\GitRepos\MenulocalSeniorTest\MenuLocalSeniorTest\bin\Debug\ru\DevExpress.Map.v21.2.Core.resources.dll
